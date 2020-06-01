@@ -1,3 +1,5 @@
+
+
 .m-padded-mini {
     padding: 0.2em !important;
 }
@@ -19,7 +21,7 @@
     padding-top: 0.5em !important;
     padding-bottom: 0.5em !important;
 }
-.m-padded-tb- {
+.m-padded-tb {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
@@ -40,6 +42,7 @@
     padding-bottom: 5em !important;
 }
 
+/*-----自定义字体------*/
 .m-text {
     font-weight: 300 !important;
     letter-spacing: 1px !important;
@@ -59,6 +62,17 @@
     line-height: 1.8 !important;
 }
 
+/*-------margin----*/
+.m-margin-tb {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-margin-top-large {
+    margin-top: 5em !important;
+}
+
+/*-------opacity-----*/
 .m-opacity-mini {
     opacity: 0.8 !important;
 }
@@ -71,4 +85,21 @@
 .m-container {
     max-width: 72em !important;
     margin: auto !important;
+}
+
+.m-black {
+    color: #333 !important;
+}
+
+.m-mobile-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 680px) {
+    .m-mobile-hide {
+        display: none !important;
+    }
+    .m-mobile-show {
+        display: block !important;
+    }
 }
