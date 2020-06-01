@@ -12,25 +12,29 @@
     <!--ui代表一个ui组件, inverted是反转的意思，颜色取反，attached是依附的功能，使之没有圆角-->
     <nav class="ui inverted attached segment m-padded-tb-mini">
         <div class="ui container">
-            <div class="ui inverted secondary menu">
+            <div class="ui inverted secondary stackable menu">
                 <h2 class="ui header teal item">Lila</h2>
-                <a href="#" class="item"><i class="home icon"></i>首页</a>
-                <a href="#" class="item"><i class="idea icon"></i>分类</a>
-                <a href="#" class="item"><i class="tags icon"></i>标签</a>
-                <a href="#" class="item"><i class="info icon"></i>关于我</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
                 <div class="right item">
-                    <div class="ui icon inverted transparent input">
+                    <div class="ui icon inverted transparent input m-item m-mobile-hide">
                         <input type="text" placeholder="Search...">
                         <i class="search link icon"></i>
                     </div>
                 </div>
             </div>
         </div>
+        <a href="#" class="ui menu toggle black icon button" style="position:absolute; top: 0; right: 0">
+            <i class="sidebar icon m-mobile-show"></i>
+        </a>
     </nav>
-    <!--中间内容-->
+    <!--除去导航栏与footer，即中间内容-->
     <div class="m-container m-padded-tb-large">
         <div class="ui container">
             <div class="ui grid">
+                <!--左边博客内容-->
                 <div class="eleven wide column">
                     <!--header-->
                     <div class="ui top attached segment">
@@ -46,7 +50,7 @@
                     <!--content-->
                     <div class="ui attached segment">
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -82,7 +86,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -118,7 +122,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -154,7 +158,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -190,7 +194,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -226,7 +230,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -262,7 +266,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -298,43 +302,7 @@
                             </div>
                         </div>
                         <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
-                                <div class="eleven wide column">
-                                    <h3>我是李落，请多指教</h3>
-                                    <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
-                                        is LilaMy name is LilaMy name is LilaMy name is LilaMy name is LilaMy name is Lila
-                                        My name is Lila</p>
-                                    <div class="ui grid">
-                                        <div class="eleven wide column">
-                                            <div class="ui mini horizontal link list">
-                                                <div class="item">
-                                                    <img src="https://unsplash.it/100/100?image=1005" target="_blank" alt="" class="ui avatar image">
-                                                    <div class="content"><a href="#" target="_blank">李落</a></div>
-                                                </div>
-                                                <div class="item">
-                                                    <i class="calender icon"></i> 2020-06-01
-                                                </div>
-                                                <div class="item">
-                                                    <i class="eye icon"></i> 2020
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="right aligned five wide column">
-                                            <a href="#" class="ui button label teal basic m-padded-tiny">一个标签</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="five wide column">
-                                    <a href="" class="ui rounded image">
-                                        <img src="https://unsplash.it/800/450?image=1005" target="_blank" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui padding vertical segment m-padded-tb-big">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="eleven wide column">
                                     <h3>我是李落，请多指教</h3>
                                     <p class="m-text">My name is LilaMy name is LilaMy name is LilaMy name is LilaMy name
@@ -383,15 +351,135 @@
                         </div>
                     </div>
                 </div>
+                <!--右边博客内容-->
+                <div class="five wide column">
+                    <!--分类部分-->
+                    <div class="ui segments">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="idea icon"></i>分类
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <div class="ui fluid vertical menu">
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    Minecraft
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                                <a href="#" class="item">
+                                    学习日志
+                                    <div class="ui teal basic left pointing label">13</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--标签部分-->
+                    <div class="ui segments" style="margin-top: 2em">
+                        <div class="ui secondary segment">
+                            <div class="ui two column grid">
+                                <div class="column">
+                                    <i class="tags icon"></i>标签
+                                </div>
+                                <div class="right aligned column">
+                                    <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui teal segment">
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                            <a href="#" target="_blank" class="ui teal basic left pointing label" style="margin-top: 0.3em; margin-top: 0.3em">
+                                方法论 <div class="detail">23</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--最新推荐-->
+                    <div class="ui segments" style="margin-top: 2em">
+                        <div class="ui secondary segment">
+                            <i class="bookmark icon"></i>最新推荐
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User story)</a>
+                        </div>
+                        <div class="ui segment">
+                            <a href="#" target="_blank" class="m-black m-text-thin">用户故事(User story)</a>
+                        </div>
+                    </div>
+                    <!--二维码-->
+                    <h4 class="ui horizontal divider header m-text-thin" style="margin-top: 2em">扫码关注我</h4>
+                    <div class="ui centered card" style="width: 11em">
+                        <img src="./static/images/wechat.png" alt="" class="ui rounded image">
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 <!--footer-->
 <footer class="ui inverted vertical segment m-padded-tb-massive">
     <div class="ui center aligned container">
-        <div class="ui inverted divided grid">
+        <div class="ui stackable inverted divided grid">
             <div class="three wide column">
-                <img src="./static/images/wechat.png" class="ui rounded image" alt="" style="width: 110px">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.png" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header">最新博客</h4>
@@ -404,7 +492,7 @@
             <div class="three wide column">
                 <h4 class="ui inverted header">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="m-text-thin m-text-height m-text-spaced item">Email:byhuang@1998.com</a>
+                    <a href="#" class="m-text-thin m-text-height m-text-spaced item">byhuang1998@gmail.com</a>
                     <a href="#" class="m-text-thin m-text-height m-text-spaced item">QQ:1181049074</a>
                 </div>
             </div>
@@ -423,5 +511,12 @@
 <!--load jQuery v3.2.1-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+    </script>
+
 </body>
 </html>
