@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+    <!--导航栏-->
+    <!--ui代表一个ui组件, inverted是反转的意思，颜色取反，attached是依附的功能，使之没有圆角-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui header teal item">Lila</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+                <a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+                <div class="right item">
+                    <div class="ui icon inverted transparent input m-item m-mobile-hide">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button" style="position:absolute; top: 0; right: 0">
+            <i class="sidebar icon m-mobile-show"></i>
+        </a>
+    </nav>
+    <!--即中间内容-->
+    <div class="m-container-small m-padded-tb-big">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                </div>
+                <div class="five wide column">
+                    <div class="ui attached top segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">一个热爱自由的自由者，喜欢什么便去做什么，不喜欢什么便会逃避什么</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic label m-margin-top-tiny">Minecraft</div>
+                        <div class="ui orange basic label m-margin-top-tiny">追番</div>
+                        <div class="ui orange basic label m-margin-top-tiny">MyCat</div>
+                        <div class="ui orange basic label m-margin-top-tiny">Study</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic label m-margin-top-tiny">Minecraft</div>
+                        <div class="ui teal basic label m-margin-top-tiny">追番</div>
+                        <div class="ui teal basic label m-margin-top-tiny">MyCat</div>
+                        <div class="ui teal basic label m-margin-top-tiny">Study</div>
+
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+                        <a href="#" class="ui qq circular icon button"><i class="qq icon"></i></a>
+                    </div>
+                    <div class="ui  wechat-qr flowing popup transition hidden" style="width: 120px">
+                        <img src="./static/images/wechat.png" alt="" class="ui rounded image m-padded-mini">
+                    </div>
+                    <div class="ui  qq-qr flowing popup transition hidden" style="width: 120px">
+                        <img src="./static/images/wechat.png" alt="" class="ui rounded image m-padded-mini">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+<!--footer-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui stackable inverted divided grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.png" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="m-text-thin m-text-height m-text-spaced item">lila</a>
+                    <a href="#" class="m-text-thin m-text-height m-text-spaced item">lila</a>
+                    <a href="#" class="m-text-thin m-text-height m-text-spaced  item">lila</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="m-text-thin m-text-height m-text-spaced item">byhuang1998@gmail.com</a>
+                    <a href="#" class="m-text-thin m-text-height m-text-spaced item">QQ:1181049074</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list">
+                    <p class="m-text-thin m-text-height m-text-spaced m-opacity-mini">这是我的新博客啦，欢迎来访!
+                        我爱追番&minecraft&养猫</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-height m-text-spaced m-opacity-tiny">Copyright@2020-2028 designed by LilaLilo</p>
+    </div>
+</footer>
+<!--load jQuery v3.2.1-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <script>
+        <!--在移动端隐藏菜单栏-->
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+        // 联系作者微信
+        $('.wechat').popup({
+            popup : $('.wechat-qr.popup'),
+            on : 'hover',
+            position : 'bottom center'
+        })
+        // 联系作者QQ
+        $('.qq').popup({
+            popup : $('.qq-qr.popup'),
+            on : 'hover',
+            position : 'bottom center'
+        })
+    </script>
+
+</body>
+</html>
